@@ -7,7 +7,8 @@
 .flex-container{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    height: 100vh;    
 }
 
 body{
@@ -18,9 +19,8 @@ body{
     flex-direction: column;
 }
 .header{
-    height: 5rem;
-    width: 100%;
-    height: 5rem;
+
+    width: 100%;    
     background-color: blue;
     flex-wrap: wrap;
     
@@ -64,7 +64,7 @@ body{
 }
 .footer{
     width: 100%;
-    height: 5rem;
+    
     background-color: cornflowerblue;
 }
 .footer__h2{
@@ -78,15 +78,16 @@ body{
     }
     .body__div{
         display: grid;
+        height: 100vh;    
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: 100px repeat(5,1fr) 100px;
+        
 
     }
     .header{
         grid-column: 1 /6 ;
-        grid-row: 1 / 2;
-        width: 100%;
-        height: 100%;
+        grid-row: 1 / 2; 
+        height: 100%;       
     }
     .header__divh1{    
         
@@ -108,24 +109,24 @@ body{
     }
     .aside{
         grid-column: 5 / 6;
-        grid-row: 2 / 6;
-        width: 100%;
-        height: 100%;
+        grid-row: 2 / 7;
+        height: 100%
+        
     }
     .main{
         grid-column: 1 / 5;
-        grid-row: 2 / 6;
-        width: 100%;
-        height: 100%;
+        grid-row: 2 / 7;
+        height: 100%
+        
     }
     .main__section{
 
     }
     .footer{
         grid-column: 1 / 6;
-        grid-row: 5 / 6;
-        width: 100%;
-        height: 100%;
+        grid-row: 7 / 8;
+        height: 100%
+        
     }
 }
 
